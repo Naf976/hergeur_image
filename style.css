@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+main{
+    width: 500px;
+    background-color: rgb(228, 228, 228);
+    padding: 100px;
+    margin: 0 auto;
+}
+h1{
+    color: rgb(58, 137, 255);
+}
+#choixImage{
+    background-color: rgb(151, 151, 151);
+    color: white;
+    padding: 5px 10px;
+}
+#choixImage:hover{
+    background-color: rgb(145, 178, 207);
+}
+
+.envoie{
+    padding: 15px 40%;
+    margin-top: 20px;
+    background-color: rgb(73, 151, 252);
+    border: none;
+    color: white;
+}
