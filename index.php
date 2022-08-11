@@ -21,7 +21,7 @@
             <aside>
                 <form action="index.php">
                     <label id="choixImage" for="choix">Selectionner une image</label>
-                    <input id="choix" type="file" hidden><span id="#fichier">Aucune image selectionné </span></br>
+                    <input id="choix" type="file" hidden><span id="fichier">Aucune image selectionné </span></br>
                     <input class="envoie" type="submit" value="Envoyer">
                 </form>
             </aside>
