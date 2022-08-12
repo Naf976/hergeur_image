@@ -15,8 +15,23 @@
             $extensionImage = $infos['extension'];
             $extensions = ['jpeg', 'jpg', 'png', 'gif'];
             if(in_array($extensionImage, $extensions)){
-                move_uploaded_file($_FILES['image']['tmp_name'], 'stock/'.basename($_FILES['image']['name']));
+                move_uploaded_file($_FILES['image']['tmp_name'], 'stock/'.time().'_'.rand().'_'.basename($_FILES['image']['name']));
+
+            } else {
+                echo '
+                <script type="text/javascript">
+                window.onlad = alert("Veuillez choisir une image JPG JPEG PNG ou bien GIF");
+                </script>
+                ';
             }
+        }
+    } else {
+        if(isset($_FILES['image']) && $_FILES['image']['error'] == 1){
+            echo '
+            <script type="text/javascript">
+            alert("Le fichier est trop volumineux");
+            </script>
+            ';
         }
     }
 ?>
@@ -27,7 +42,7 @@
             <h1>Hébergeur d'image</h1>
         </header>
         <section id="conteneurImage">
-            <p>Aucune photo reçu pour le moment...</p>
+            <p id="vide">Aucune photo reçu pour le moment...</p>
         </section>
 
         <section id="traitement">

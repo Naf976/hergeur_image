@@ -11,6 +11,15 @@ main{
 h1{
     color: rgb(58, 137, 255);
 }
+#conteneurImage{
+    min-height: 150px;
+    border: dashed 2px rgb(137, 186, 250);
+    padding: 10px;
+    margin: 40px auto;
+}
+#vide{
+    color : rgb(137, 186, 250);
+}
 #choixImage{
     background-color: rgb(151, 151, 151);
     color: white;
